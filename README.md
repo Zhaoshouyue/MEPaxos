@@ -13,7 +13,7 @@ the code is based on the work of EPaxos(https://github.com/efficient/epaxos)
 3.mypaxos-throughput-16B， which is the throughput code when the client command is 16B
 
 # You may need to run these command:
-go install master
+go install memaster
 
 go install server
 
