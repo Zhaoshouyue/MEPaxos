@@ -568,10 +568,8 @@ func (r *Replica) slowClock() {
         		//log.Printf("the replica latency to other replica is ")
         		//log.Println(ave_latency)
 
-        		//same as the function of Beacon, execute only once
+        		//same as the function of Beacon, execute only once，
         		if replicaOrder {
-        			r.Beacon = false
-        			time.Sleep(1000 * 1000 * 1000)
         			for i := 0; i < r.N-1; i++ {
         				min := i
         				for j := i + 1; j < r.N-1; j++ {
@@ -1263,7 +1261,7 @@ func (r *Replica) run() {
 }
 
 /***********************************
-    Paxos related                  *
+    Paxos related whcih add by   *
 ************************************/
 
 //append a log entry to stable storage
